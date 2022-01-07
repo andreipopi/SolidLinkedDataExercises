@@ -1,7 +1,10 @@
 {
-  "type":"module",
   "dependencies": {
-    "jsonld": "^5.2.0"
+    "jsonld": "^5.2.0",
+    "n3": "^1.12.2",
+    "tsc": "^2.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.8"
   }
-  
 }

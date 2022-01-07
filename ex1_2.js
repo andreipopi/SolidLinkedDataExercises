@@ -3,7 +3,8 @@
 Print an RDF representation of the JSON-LD data.
 Extract organization information using a frame.
 */
-import jsonld from 'jsonld';
+const jsonld = require('jsonld');
+const { mainModule } = require('process');
 
 const context = {
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -41,10 +42,12 @@ const frame = {
 }
 
 
-const nquads =  await jsonld.toRDF(doc, {format: 'application/n-quads'});
+main();
 
-console.log(nquads);
-console.log("finish");
-const framed = await jsonld.frame(doc, frame);
-
-console.log(framed);
+async function main(){
+    const nquads =  await jsonld.toRDF(doc, {format: 'application/n-quads'});
+    console.log(nquads);
+    console.log("finish");
+    const framed = await jsonld.frame(doc, frame);
+    console.log(framed);
+}

@@ -7,15 +7,15 @@
     "@id": "https://new-u.tech/gwen/#me",
     "@type": "foaf:Person",
 
-    "foaf:name": "Gwendolyne",
-    "foaf:lastName": "Stacy",
-    "foaf:nick": "Gwen",
-    "foaf:homepage": "https://new-u.tech/gwen",
-    "foaf:email": "gwen@new-u.tech",
+    "foaf:name": "Andrei",
+    "foaf:lastName": "Popescu",
+    "foaf:nick": "___",
+    "foaf:homepage": "linkedin/andrei-popescu",
+    "foaf:email": "andrei.popescu@ugent.be",
     "foaf:img": "image",
     "org:memberOf": {
         "@type": "org:Organization",
-        "foaf:name": "New U Technologies",
-        "foaf:homepage": "https://new-u.tech"
+        "foaf:name": "KNoWS",
+        "foaf:homepage": "https://knows.idlab.ugent.be"
     }
 }

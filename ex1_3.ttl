@@ -1,0 +1,12 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+
+<me> a foaf:Person;
+     foaf:name "Andrei";
+     foaf:lastName "Popescu";
+     foaf:nick "___";
+     foaf:homepage "linkedin/andrei-popescu";
+     foaf:email "andrei.popescu@ugent.be";
+     foaf:img "image";
+     org:memberOf <KNoWS>.
+<KNoWS> a org:Organization.
