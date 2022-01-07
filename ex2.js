@@ -11,6 +11,10 @@ const context = {
 };
 
 const doc = {
+    "@context": {
+        "foaf": "http://xmlns.com/foaf/0.1/",
+    "org": "http://www.w3.org/ns/org"
+    },
     "@id": "https://new-u.tech/gwen/#me",
     "@type": "foaf:Person",
 
@@ -27,8 +31,20 @@ const doc = {
     }
 };
 
+const frame = {
+        "@context": {
+            "foaf": "http://xmlns.com/foaf/0.1/",
+            "org": "http://www.w3.org/ns/org"
+        },
+        "@type": "org:Organization"
+    
+}
 
 
 const nquads =  await jsonld.toRDF(doc, {format: 'application/n-quads'});
 
 console.log(nquads);
+console.log("finish");
+const framed = await jsonld.frame(doc, frame);
+
+console.log(framed);
