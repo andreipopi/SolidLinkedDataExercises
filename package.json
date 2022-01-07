@@ -1,5 +1,7 @@
 {
+  "type":"module",
   "dependencies": {
     "jsonld": "^5.2.0"
   }
+  
 }
